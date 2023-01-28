@@ -1,1 +1,4 @@
 "# IntroToWebTechProject" 
+"# Making a fictional website on Green energy which Adrian and I agreed on"
+"# I came up with a name called Ether Earth and "Ether" means clear sky"
+
