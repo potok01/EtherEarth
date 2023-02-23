@@ -1,0 +1,15 @@
+/*Sets theme for all webpages*/
+
+body {
+    background-color: white;
+}
+
+table {
+    background-color: grey;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    width: 8.333%;
+}
