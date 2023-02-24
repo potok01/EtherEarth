@@ -4,12 +4,6 @@ body {
     background-color: white;
 }
 
-table {
-    background-color: grey;
-    width: 100%;
-}
-
-td {
-    text-align: center;
-    width: 8.333%;
+nav > .container-fluid > .row > .col {
+    background-color: lightgrey;
 }
