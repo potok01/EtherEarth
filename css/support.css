@@ -1,0 +1,49 @@
+.col-lg-5 {
+    padding: 2%;    
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+
+.form-group{
+    margin-bottom: 1%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    color: blue;
+  }
+
+  .navbar-nav .nav-item > .nav-link + ul.nested-nav {
+    padding-left: 2%;
+  }
+
+  .sidebar .nav-link {
+    color: black;
+    font-size: 85%;
+  }
+
+  .sidebar .sidebar-header {
+    color: black;
+    font-size: 100%;
+  }
+
+  .header-link{
+    color: black;
+  }
+
+  .contact{
+    margin-top: 5%;
+  }
