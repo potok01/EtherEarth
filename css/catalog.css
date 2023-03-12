@@ -1,0 +1,22 @@
+
+.container > .row{
+    margin-top: 10%;
+}
+
+.banner {
+position: relative;
+background-image: url("../images/careers_page_banner.jpg");
+background-position: center;
+background-size: cover;
+height: 400px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
