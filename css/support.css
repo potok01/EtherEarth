@@ -10,7 +10,7 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 1em;
-  }
+}
   
 
 .form-group{
@@ -20,30 +20,30 @@ button {
 img {
     max-width: 100%;
     height: auto;
-  }
+}
 
-  a {
+a {
     color: blue;
-  }
+}
 
-  .navbar-nav .nav-item > .nav-link + ul.nested-nav {
+.navbar-nav .nav-item > .nav-link + ul.nested-nav {
     padding-left: 2%;
-  }
+}
 
-  .sidebar .nav-link {
+.sidebar .nav-link {
     color: black;
     font-size: 85%;
-  }
+}
 
-  .sidebar .sidebar-header {
+.sidebar .sidebar-header {
     color: black;
     font-size: 100%;
-  }
+}
 
-  .header-link{
+.header-link{
     color: black;
-  }
+}
 
-  .contact{
+.contact{
     margin-top: 5%;
-  }
+}

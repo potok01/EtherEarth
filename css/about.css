@@ -6,23 +6,23 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 1em;
-  }
+}
 
-  .container > .row{
+.container > .row{
     margin-top: 10%;
     margin-bottom: 10%;
-  }
+}
 
-  .col-lg-5 > img{
+.col-lg-5 > img{
     max-width: 75%;
     height: auto;
-  }
+}
 
-  p{
+p{
     font-size: 150%;
-  }
+}
 
-  .container > .row {
+.container > .row {
     padding: 0px;
     margin: 5%;
-  }
+}

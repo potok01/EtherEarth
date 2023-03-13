@@ -6,15 +6,15 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 1em;
-  }
+}
 
-  .container > .row{
+.container > .row{
     margin-top: 5%;
     margin-bottom: 5%;
-  }
+}
 
-  .col-lg-5 > img{
+.col-lg-5 > img{
     margin-top: 5%;
     max-width: 75%;
     height: auto;
-  }
+}

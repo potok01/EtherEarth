@@ -11,24 +11,24 @@ form > button {
     text-align: center;
     text-decoration: none;
     font-size: 1em;
-  }
+}
 
 
 .col-lg-5 > img{
     margin-top: 5%;
     max-width: 75%;
     height: auto;
-  }
+}
 
-  footer{
+footer{
     margin-top: 1%;
-  }
+}
 
-  .col-lg-5 > img{
+.col-lg-5 > img{
     margin-top: 5%;
     max-width: 100%;
     height: auto;
-  }
+}
 
 .container > .row {
     padding: 2%;
