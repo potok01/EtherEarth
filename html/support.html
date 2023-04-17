@@ -7,6 +7,8 @@
     <!-- Importing Bootstrap CSS and JS files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../src/support.js"></script>
     <!-- Setting document encoding and viewport meta tag -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -170,17 +172,18 @@
         <h3 id="Customer Support">Customer Support</h3>
         <p>We are dedicated to providing 24/7 quality customer support to all of our customers. Please fill out the form below and a customer service represenative will be with you shortly.</p>    
         <article>
-          <form action="">
+          <form id="support-form">
             <div class="form-group">
               <label for="email">Email address:</label>
               <input type="email" class="form-control" id="email">
             </div>
             <div class="form-group">
-              <label for="customer_support_content">Issue: </label>
-              <input type="text" class="form-control" id="customer_support_content">
+              <label for="issue">Issue: </label>
+              <input type="text" class="form-control" id="issue">
             </div>
             <button type="submit">Submit</button>
           </form>
+          <div id="response"></div>
         </article>
       </div>
       <div class="col-lg-5 d-flex justify-content-center">

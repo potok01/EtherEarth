@@ -1,5 +1,4 @@
 /*Sets theme for all webpages*/
-
 body {
     background-color: white;
 }
@@ -7,7 +6,6 @@ body {
 nav > .container-fluid > .row > .col {
     background-color: lightgrey;
 }
-
 
 .card {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
@@ -43,6 +41,16 @@ nav > .container-fluid > .row > .col {
     margin-bottom: 0.625em;
 }
 
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
 .card button {
     background-color: #4CAF50;
     border: none;
@@ -57,6 +65,7 @@ nav > .container-fluid > .row > .col {
     left: 0;
     right: 0;
 }
-  
+
+
   
   
