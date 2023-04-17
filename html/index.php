@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Initialize database -->
+    <?php
+      include('../php/init_databases.php');
+    ?>
     <!-- Importing CSS files -->
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/index.css" />

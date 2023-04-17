@@ -20,8 +20,10 @@ $issue = $_POST['issue'] ?? '';
 $sql = "INSERT INTO support_tickets (email, issue) VALUES ('$email', '$issue')";
 $result = $conn->query($sql);
 
+// Get the id of the last data last inserted
 $ticket_id = mysqli_insert_id($conn);
 
+// Echo results
 if (!$result) {
     die('Invalid query: ' . mysqli_error($conn));
 } else {

@@ -16,7 +16,9 @@ $(document).ready(function(){
             url: '../php/support.php',
             data: formdata,
             success: function(response){
-              $('form').trigger('reset'); // reset the form after submitting
+              // Reset form
+              $('form').trigger('reset'); 
+              // Display response message
               $('#response').html(response);
             },
             error: function(xhr, status, error) {
