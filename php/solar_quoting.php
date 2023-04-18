@@ -15,10 +15,14 @@ if ($conn->connect_error) {
 // Get data from form
 $name = $_POST['name'] ?? '';
 $email = $_POST['email'] ?? '';
-$issue = $_POST['issue'] ?? '';
+$address = $_POST['address'] ?? '';
+$type_of_panels = $_POST['type_of_panels'] ?? '';
+$type_of_inverters = $_POST['type_of_inverters'] ?? '';
+$energy_usage = $_POST['energy_usage'] ?? '';
+
 
 // Insert data into database
-$sql = "INSERT INTO support_tickets (name, email, issue) VALUES ('$name', '$email', '$issue')";
+$sql = "INSERT INTO solar_quoting_tickets (name, email, address, type_of_panels, type_of_inverters, energy_usage) VALUES ('$name', '$email', '$address', '$type_of_panels','$type_of_inverters','$energy_usage')";
 $result = $conn->query($sql);
 
 // Get the id of the last data last inserted

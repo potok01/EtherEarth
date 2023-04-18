@@ -15,10 +15,14 @@ if ($conn->connect_error) {
 // Get data from form
 $name = $_POST['name'] ?? '';
 $email = $_POST['email'] ?? '';
-$issue = $_POST['issue'] ?? '';
+$address = $_POST['address'] ?? '';
+$type_of_oil = $_POST['type_of_oil'] ?? '';
+$type_of_surface = $_POST['type_of_surface'] ?? '';
+$size = $_POST['size'] ?? '';
+
 
 // Insert data into database
-$sql = "INSERT INTO support_tickets (name, email, issue) VALUES ('$name', '$email', '$issue')";
+$sql = "INSERT INTO oil_quoting_tickets (name, email, address, type_of_oil, type_of_surface, size) VALUES ('$name', '$email', '$address', '$type_of_oil','$type_of_surface','$size')";
 $result = $conn->query($sql);
 
 // Get the id of the last data last inserted

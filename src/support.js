@@ -1,6 +1,7 @@
 $(document).ready(function(){
-    $('form').submit(function(event){
+    $('#support-form').submit(function(event){
       var formdata = $(this).serialize(); 
+      var name = $('#name').val();
       var email = $('#email').val(); 
       var issue = $('#issue').val(); 
   
@@ -8,7 +9,7 @@ $(document).ready(function(){
       event.preventDefault();
   
       // Make sure user has filled out all form fields
-      if(email === '' || issue === ''){ 
+      if(name === '' || email === '' || issue === ''){ 
           alert('Please fill out all fields.'); 
       } else {
           $.ajax({
@@ -17,7 +18,7 @@ $(document).ready(function(){
             data: formdata,
             success: function(response){
               // Reset form
-              $('form').trigger('reset'); 
+              $('support-form').trigger('reset'); 
               // Display response message
               $('#response').html(response);
             },
