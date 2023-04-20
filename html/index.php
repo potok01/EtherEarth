@@ -28,9 +28,9 @@
       <div class="container-fluid ">
           <!-- Brand and Current page links -->
           <div class="brand col-lg-3">
-            <a class="nav-link d-inline-block" href="../html/index.html">Ether Earth</a>
+            <a class="nav-link d-inline-block" href="../html/index.php">Ether Earth</a>
             <a class="nav-link d-inline-block" href="#">|</a>
-            <a class="nav-link d-inline-block" href="../html/index.html">Home</a>
+            <a class="nav-link d-inline-block" href="../html/index.php">Home</a>
           </div>
         <ul class="navbar-nav col-lg-6 d-flex justify-content-center">
           <!--  Logo  -->
