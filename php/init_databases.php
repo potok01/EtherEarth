@@ -36,7 +36,6 @@ if ($conn->query($sql) === TRUE) {
     error_log("Error creating table: " . $conn->error);
 }
 
-
 // Create table if it does not exist
 $conn = new mysqli($servername, $username, $password, $dbname);
 $sql = "CREATE TABLE IF NOT EXISTS oil_quoting_tickets (
@@ -69,10 +68,10 @@ $sql = "CREATE TABLE IF NOT EXISTS solar_quoting_tickets (
 )";
 if ($conn->query($sql) === TRUE) {
     error_log("Table created successfully");
-} else {
+} 
+else {
     error_log("Error creating table: " . $conn->error);
 }
-
 
 
 // Close connection
