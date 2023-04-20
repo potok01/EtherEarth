@@ -14,7 +14,6 @@ h1{
     display: none;
 }
 
-/* map element needs a styled size otherwise it doesnt appear at all */
 #map {
     height: 440px;
     width:  500px
