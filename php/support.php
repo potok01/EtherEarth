@@ -24,10 +24,11 @@ $result = $conn->query($sql);
 // Get the id of the last data last inserted
 $ticket_id = mysqli_insert_id($conn);
 
-// Echo results
+// Echo results and add ticket ID number
 if (!$result) {
     die('Invalid query: ' . mysqli_error($conn));
-} else {
+} 
+else {
   echo "Thank you for submitting a ticket, your ticket ID is " . $ticket_id;
 }
 
