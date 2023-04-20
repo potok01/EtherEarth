@@ -47,51 +47,40 @@ $(document).ready(function() {
     }
   ];
   
+  // Initialize map
+  initMap();
+
   var map;
 
-  $(function() {
-    // Show loading animation
+  $('.card').on('click', function() {
+      // Show loading animation
     $('.animLoading').show();
-    
-    $('.card').on('click', function() {
-        // Retrieve the ID of the clicked card
-        var locationName = $(this).attr('id');
 
-        // Retreive the location JSON
-        var location = locations.find(location => location.name === locationName);
+    // Retrieve the ID of the clicked card
+    var locationName = $(this).attr('id');
 
-        // Update the Google Map with the location data
-        map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
-          center: new google.maps.LatLng(location.latitude, location.longitude),
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        });
-      
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(location.latitude, location.longitude),
-          map: map
-        });
-      
-        // Update the information displayed below the map with the location data
-        $('#location-name').text(location.name);
-        $('#location-description').text(location.description);
+    // Retreive the location JSON
+    var location = locations.find(location => location.name === locationName);
 
-        // Scroll to map
-        $('html, body').animate({
-          scrollTop: $('#map').offset().top - ($(window).height() / 2)
-        }, 500);
-        
-        // all done so now hide the animated loading GIF
-        $('.animLoading').fadeOut("slow");
+    // Update the Google Map with the location data
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 8,
+      center: new google.maps.LatLng(location.latitude, location.longitude),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+  
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(location.latitude, location.longitude),
+      map: map
     });
 
-    // Initialize map
-    initMap();
+    // Scroll to map
+    window.scrollTo(0, 0);
+  });
 
-    // Hide the loading gif once the map is loaded
-    google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
-      $('.animLoading').hide();
-    });
+  // Hide the loading gif once the map is loaded
+  google.maps.event.addListenerOnce(map, 'tilesloaded', function() {
+    $('.animLoading').hide();
   });
 
   // initialize map
@@ -111,4 +100,5 @@ $(document).ready(function() {
       map: map
     });
   }
+
 });
