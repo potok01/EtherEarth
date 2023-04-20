@@ -29,6 +29,7 @@ $(document).ready(function() {
             var type_of_oil = $('#type_of_oil').val();
             var type_of_surface = $('#type_of_surface').val(); 
             var size = $('#size').val();
+            //alerts if all fields not filled
             if(name === '' || email === '' || address === '' || type_of_oil === '' || type_of_surface === '' || size === ''){
                 alert('Please fill out all fields.'); 
             }
@@ -64,7 +65,7 @@ $(document).ready(function() {
                     url: url,
                     data: formdata,
                     success: function(response){
-                        // Reset form
+                        // Resets the form
                         $('form').trigger('reset'); 
                         // Display response message
                         $('#response').html(response);
@@ -77,8 +78,6 @@ $(document).ready(function() {
                 });
             }
         }
-
-
 
     });
     
