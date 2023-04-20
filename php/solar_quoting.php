@@ -20,7 +20,6 @@ $type_of_panels = $_POST['type_of_panels'] ?? '';
 $type_of_inverters = $_POST['type_of_inverters'] ?? '';
 $energy_usage = $_POST['energy_usage'] ?? '';
 
-
 // Insert data into database
 $sql = "INSERT INTO solar_quoting_tickets (name, email, address, type_of_panels, type_of_inverters, energy_usage) VALUES ('$name', '$email', '$address', '$type_of_panels','$type_of_inverters','$energy_usage')";
 $result = $conn->query($sql);
@@ -31,7 +30,8 @@ $ticket_id = mysqli_insert_id($conn);
 // Echo results
 if (!$result) {
     die('Invalid query: ' . mysqli_error($conn));
-} else {
+} 
+else {
   echo "Thank you for submitting a ticket, your ticket ID is " . $ticket_id;
 }
 
