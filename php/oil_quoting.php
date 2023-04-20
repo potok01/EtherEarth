@@ -20,7 +20,6 @@ $type_of_oil = $_POST['type_of_oil'] ?? '';
 $type_of_surface = $_POST['type_of_surface'] ?? '';
 $size = $_POST['size'] ?? '';
 
-
 // Insert data into database
 $sql = "INSERT INTO oil_quoting_tickets (name, email, address, type_of_oil, type_of_surface, size) VALUES ('$name', '$email', '$address', '$type_of_oil','$type_of_surface','$size')";
 $result = $conn->query($sql);
@@ -31,7 +30,8 @@ $ticket_id = mysqli_insert_id($conn);
 // Echo results
 if (!$result) {
     die('Invalid query: ' . mysqli_error($conn));
-} else {
+} 
+else {
   echo "Thank you for submitting a ticket, your ticket ID is " . $ticket_id;
 }
 
