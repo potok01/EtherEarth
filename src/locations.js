@@ -1,26 +1,26 @@
 $(function () {
     $('.animLoading').show();
     
-    var f1 = "../php/locations.php";
+    var php = "../php/locations.php";
     var param = ['GB:London', 'DE:Berlin', 'CA:Toronto', 'FR:Paris', 'ES:Barcelona', 'MX:Mexico City', 'US:Detroit', 
 		         'US:Kentucky', 'US:Louisville', 'US:Burlington'];
     
     // make request for list of cities for specified countries and cities
-    $.get(f1, {data: param})
+    $.get(php, {data: param})
         .done(function (data) {
             var data = JSON.parse(data);
             // loop through returned array of cities
             $.each(data, function(index, city) {
                 // check if this is one of the desired cities
-                var found = false;
+                var n = false;
                 for (var i = 0; i < param.length; i++) {
                     var p = param[i].split(':');
                     if (city.iso === p[0] && city.name === p[1]) {
-                        found = true;
+                        n = true;
                         break;
                     }
                 }
-                if (found) {
+                if (n) {
                     // create new empty list item
                     var item = $('<li>');
                     // list item using data attributes
