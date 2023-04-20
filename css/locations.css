@@ -6,3 +6,16 @@ h1{
 .container > .row {
     padding: 3%;
 }
+.page-content .mdl-card {
+    margin: 1em;
+}
+
+.animLoading {
+    display: none;
+}
+
+/* map element needs a styled size otherwise it doesnt appear at all */
+#map {
+    height: 440px;
+    width:  500px
+}   
