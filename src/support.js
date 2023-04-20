@@ -8,7 +8,7 @@ $(document).ready(function(){
       // Stop the window from scrolling up if the user submits a blank form
       event.preventDefault();
   
-      // Make sure user has filled out all form fields
+      // Makes sure user has filled out all form fields
       if(name === '' || email === '' || issue === ''){ 
           alert('Please fill out all fields.'); 
       } else {
@@ -17,7 +17,7 @@ $(document).ready(function(){
             url: '../php/support.php',
             data: formdata,
             success: function(response){
-              // Reset form
+              // Resets the form
               $('support-form').trigger('reset'); 
               // Display response message
               $('#response').html(response);
