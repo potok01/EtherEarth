@@ -12,8 +12,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Setting the document title and favicon -->
-    <title>Locations | Ether Earth&#8482</title>
+    <title>Locations | Ether Earth&#8482 </title>
     <link rel="icon" href="../images/favicon.png">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-orange.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../css/locations.css">  
+    
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAH1cI1VpQXkWbbeMZ1KO9KnyyYp0SzX7g'></script>
+        
+    <script src="../src/locations.js"></script> 
 </head>
 
 <body>
@@ -41,7 +54,7 @@
               <li><a class="dropdown-item" href="../html/solar_tech.html">Solar Energy Technology</a></li>
             </ul>
           </li>
-          <!--  Careers page link -->
+         <!--  Careers page link -->
           <li class="nav-item">
             <a class="nav-link" href="../html/catalog.html">Careers</a>
           </li>
@@ -67,14 +80,33 @@
   </header>
    
   <h1>Locations</h1>
-
+	<main class="mdl-layout__content">
+        <div class="page-content">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--2-col">  
+				<h5>Here is a Google Map to our locations and below is their information and screenshot of the map!</h5>
+                 <ul id="cities" class="mdl-list"> 
+                  </ul>
+                </div> 
+                <div class="mdl-cell mdl-cell--1-col">
+                  <div id="map"></div>
+                </div>
+            </div>
+            <div class="mdl-grid">
+              <div class="animLoading mdl-cell mdl-cell--1-col"><img src="../images/spinner.gif" /></div>
+            </div>
+        </div>
+      </main>
   <!--  Cards container -->
   <div class="container">
     <!--  First row of cards  -->
     <div class="row">
       <div class="col-lg-4 d-flex justify-content-center">
         <div class="card" id="Michigan">
-          <img src="../images/location1.JPG" alt="Michigan Location">
+		<a href="https://www.google.com/maps/search/?api=1&query=42.3314,-83.0458">
+		  <img src="../images/location1.JPG" alt="Michigan Location">
+	    </a>
+          <!--<img src="../images/location1.JPG" alt="Michigan Location">-->
           <div class="card-content">
             <h3>Michigan Location</h3>
             <p>123 Main Street<br>Detroit, MI 48201</p>
@@ -211,5 +243,8 @@
     </nav>
   </footer>
   
+</body>
+<body>
+    </div>
 </body>
 </html>
