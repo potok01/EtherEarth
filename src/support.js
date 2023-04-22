@@ -18,7 +18,7 @@ $(document).ready(function(){
             data: formdata,
             success: function(response){
               // Resets the form
-              $('support-form').trigger('reset'); 
+              $('#support-form').trigger('reset'); 
               // Display response message
               $('#response').html(response);
             },
