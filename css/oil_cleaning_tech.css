@@ -1,0 +1,12 @@
+.container > .row{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.col-lg-5 > img{
+    margin-top: 5%;
+    max-width: 75%;
+    height: auto;
+}
+
+

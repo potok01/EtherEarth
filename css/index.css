@@ -1,0 +1,42 @@
+.banner {
+    position: relative;
+    background-image: url("../images/banner_transparent.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner > p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: calc(20px + 2vw);
+    font-style: italic;
+}
+
+.careers_banner {
+    position: relative;
+    background-image: url("../images/careers_banner.jpg");
+    background-position: 25%;
+    background-size: cover;
+    height: 300px;
+}
+
+.general_information_banner {
+    position: relative;
+    background-image: url("../images/general_information_banner.jpg");
+    background-position: 25%;
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
+}
+
+.general_information_banner > p{
+    color: white;
+    font-size: calc(10px + 1vw);
+}
+

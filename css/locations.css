@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+h5 {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.container > .row {
+    padding: 3%;
+}
+.page-content .mdl-card {
+    margin: 1em;
+}
+
+.animLoading {
+    display: none;
+}
+
+#map {
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+  }
+
+#map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.animLoading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

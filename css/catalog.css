@@ -1,0 +1,11 @@
+.container > .row{
+    margin-top: 10%;
+}
+
+.banner {
+    position: relative;
+    background-image: url("../images/careers_page_banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}

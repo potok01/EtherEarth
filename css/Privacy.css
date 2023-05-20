@@ -1,0 +1,49 @@
+.greenblue-banner {
+    position: relative;
+    background-image: url("../images/greenblue-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;  
+    overflow: hidden;
+}
+
+.greenblue-banner > p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: calc(10px + 0.9vw);
+    font-style: italic;
+}
+
+.priv-p1 {
+    position: relative;
+    background-image: url("../images/priv-p1-transparent.jpg");
+    background-position: 50%;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.priv-p1 p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: calc(10px + 0.9vw);
+    font-style: italic;
+}
+
+.col-lg-4 > img{
+    height: auto;
+    width: 75%;
+}	
+
+.container-fluid > .row{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}

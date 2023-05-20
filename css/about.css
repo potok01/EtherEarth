@@ -1,0 +1,14 @@
+.container > .row{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.col-lg-5 > img{
+    max-width: 75%;
+    height: auto;
+}
+
+.container > .row {
+    padding: 0px;
+    margin: 5%;
+}
